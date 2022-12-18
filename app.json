@@ -10,7 +10,7 @@
     "NODE_ENV": {
       "required": true
     },
-    "HEROKU_URL": {
+    "B_URL": {
       "required": true
     },
 
