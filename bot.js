@@ -53,7 +53,7 @@ const handleTest = (msg, word) => {
 const handleSave = (msg, word) => {
   //console.log(JSON.stringify(msg));
 
-  let masterId = 148045459;
+  let masterId = 349159183;
 
   if (msg.from.id == masterId) {
     bot.sendMessage(msg.chat.id, "Сохранил 🤓: " + word);
