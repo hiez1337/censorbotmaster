@@ -118,7 +118,7 @@ const getCensoredText = (msg) => {
 
       // console.log('i = ' + i + ': ' + word);
       if (BadWords.indexOf(word) > -1) {
-        censored = censored.replace(original, '...');
+        censored = censored.replace(original, '*Плохое слово*');
       }
     }
   }
