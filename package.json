@@ -1,7 +1,7 @@
 {
-  "name": "gdg-censor-bot",
-  "version": "1.0.0",
-  "description": "GDG Censor Bot",
+  "name": "censor-bot",
+  "version": "0.0.1",
+  "description": "Censor Bot",
   "main": "index.js",
   "scripts": {
     "dev": "export $(cat .env | xargs) && node index.js",
@@ -9,12 +9,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/VadimCpp/gdg-censor-bot.git"
+    "url": "git+https://github.com/hiez1337/censorbotmaster.git"
   },
-  "author": "Vadim Cpp",
+  "author": "PapiMunyani",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/VadimCpp/gdg-censor-bot/issues"
+    "url": "https://github.com/hiez1337/censorbotmaster/issues"
   },
   "dependencies": {
     "body-parser": "^1.15.0",
