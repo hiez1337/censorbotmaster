@@ -162,17 +162,7 @@ bot.on('message', (msg) => {
   console.log('\n📰  Received message:');
   console.log('  ', msg.text || '(no text)');
   
-  const chatId = msg.chat.id  
-
-@bot.message_handler(func=lambda message: message.entities is not None and message.chat.id == chatId)
-def delete_links(message):
-    for entity in message.entities:  
-        
-        if entity.type in ["url", "text_link"]: 
-            
-            bot.deleteMessage(msg.chat.id, msg.message_id);
-        else:
-            return
+ 
 
   if (msg.text) {
 
