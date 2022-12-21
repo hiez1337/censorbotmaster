@@ -162,14 +162,14 @@ bot.on('message', (msg) => {
   console.log('\n📰  Received message:');
   console.log('  ', msg.text || '(no text)');
   
-  const chatId = msg.chat.id  # Ваш ID группы
+  const chatId = msg.chat.id  
 
 @bot.message_handler(func=lambda message: message.entities is not None and message.chat.id == chatId)
 def delete_links(message):
-    for entity in message.entities:  # Пройдёмся по всем entities в поисках ссылок
-        # url - обычная ссылка, text_link - ссылка, скрытая под текстом
+    for entity in message.entities:  
+        
         if entity.type in ["url", "text_link"]: 
-            # Мы можем не проверять chat.id, он проверяется ещё в хэндлере 
+            
             bot.deleteMessage(msg.chat.id, msg.message_id);
         else:
             return
