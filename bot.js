@@ -162,7 +162,20 @@ bot.on('message', (msg) => {
   console.log('\n📰  Received message:');
   console.log('  ', msg.text || '(no text)');
   
- 
+ const handleLink = (msg) => {
+  /**
+   * @type {number}
+   */
+  const chatId = msg.chat.id;
+
+  let link = msg.text;
+  let linkRegex = /(https?:\/\/)?([\da-z\.-]+)\.([a-z\.]{2,6})([\/\w \.-]*)*\/?/;
+
+  if (linkRegex.test(link)) {
+    bot.sendMessage(chatId, "Ссылка найдена 😎: " + link);
+    bot.deleteMessage(msg.chat.id, msg.message_id);
+  }
+}
 
   if (msg.text) {
 
